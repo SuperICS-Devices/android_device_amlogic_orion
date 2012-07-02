@@ -46,6 +46,6 @@ PRODUCT_COPY_FILES += \
 
 # Gsensor
 PRODUCT_PROPERTY_OVERRIDES += \
-	ro.sf.gsensorposition=3 \
+	ro.sf.gsensorposition=2 \
 	sys.fb.bits=32 \
 	ro.setupwizard.mode=OPTIONAL

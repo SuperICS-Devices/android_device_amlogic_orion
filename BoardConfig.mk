@@ -1,5 +1,5 @@
 #Amlogic generic device
-include device/amlogic/aml-common/BoardConfig.mk
+include device/amlogic/common/BoardConfig.mk
 
 #Sensors
 TARGET_USES_OLD_LIBSENSORS_HAL := true
@@ -14,7 +14,7 @@ BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
 
 #Prebuilt Kernel
-TARGET_PREBUILT_KERNEL := device/amlogic/sirius/kernel
+TARGET_PREBUILT_KERNEL := device/amlogic/orion/kernel
 
 #TS
 BOARD_USE_LEGACY_TOUCHSCREEN:=true

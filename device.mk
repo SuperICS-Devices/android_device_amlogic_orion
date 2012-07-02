@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 
-TARGET_PREBUILT_KERNEL=device/amlogic/orion/kernel
 ifeq ($(TARGET_PREBUILT_KERNEL),)
 LOCAL_KERNEL := device/amlogic/orion/kernel
 else
@@ -22,7 +21,7 @@ LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
 
 # Inherit generic amlogic device
-$(call inherit-product, device/amlogic/aml-common/aml-common.mk)
+$(call inherit-product, device/amlogic/common/aml-common.mk)
 
 
 # Modules
@@ -30,9 +29,7 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_KERNEL):kernel \
 	device/amlogic/orion/prebuilt/modules/mali.ko:system/lib/modules/mali.ko \
 	device/amlogic/orion/prebuilt/modules/ump.ko:system/lib/modules/ump.ko \
-	device/amlogic/orion/prebuilt/modules/cifs.ko:system/lib/modules/cifs.ko \
-	device/amlogic/orion/prebuilt/modules/tun.ko:system/lib/modules/tun.ko \
-	device/amlogic/orion/prebuilt/modules/ext4.ko:system/lib/modules/ext4.ko
+	device/amlogic/orion/prebuilt/modules/dhd.ko:system/lib/modules/dhd.ko
 
 # Sensors
 PRODUCT_COPY_FILES += \

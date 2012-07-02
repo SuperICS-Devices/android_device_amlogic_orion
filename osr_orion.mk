@@ -29,10 +29,10 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=aml8726m BUILD_FINGERPRINT="motorol
 
 PRODUCT_PACKAGE_OVERLAYS += device/amlogic/orion/overlay
 
-# Inherit Gapps blobs
--include vendor/osr/products/minimal_gapps.mk
+# Inherit Facelock blobs
+-include vendor/osr/products/facelock.mk
 
-# Inherit Flash Player
--include vendor/osr/products/flashplayer.mk
+# Inherit Theme Chooser
+-include vendor/osr/products/themes_common.mk
 
-PRODUCT_LOCALES := es_ES ca_ES zh_CN ja_JP ko_KR ru_RU en_US en_GB fr_FR it_IT de_DE mdpi
+PRODUCT_LOCALES := es_ES ca_ES fr_FR it_IT de_DE nl_NL pl_PL ja_JP zh_TW zh_CN ru_RU ko_KR en_US pt_PT en_GB ro_RO mdpi

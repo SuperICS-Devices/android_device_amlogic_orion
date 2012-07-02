@@ -4,10 +4,22 @@ include device/amlogic/aml-common/BoardConfig.mk
 #Sensors
 TARGET_USES_OLD_LIBSENSORS_HAL := true
 
-#BT
-BOARD_HAVE_BLUETOOTH := false
+#WIFI
+WIFI_DRIVER_MODULE_PATH := "/system/lib/modules/dhd.ko"
+WIFI_DRIVER_MODULE_NAME := "dhd"
+WIFI_DRIVER_MODULE_ARG  := "firmware_path=/etc/sdio-g-cdc-full11n-reclaim-roml-wme-idsup.bin nvram_path=/etc/nvram.txt"
 
-#/proc/mtd
+#BT
+BOARD_HAVE_BLUETOOTH := true
+BOARD_HAVE_BLUETOOTH_BCM := true
+
+#Prebuilt Kernel
+TARGET_PREBUILT_KERNEL := device/amlogic/sirius/kernel
+
+#TS
+BOARD_USE_LEGACY_TOUCHSCREEN:=true
+
+#/proc/mtd READ FROM DEVICE PLEASE
 #dev:    size   erasesize  name
 #mtd0: 00800000 00200000 "nandboot"
 #mtd1: 01000000 00800000 "logo"
@@ -28,4 +40,3 @@ BOARD_FLASH_BLOCK_SIZE := 8388608
 BOARD_AVOID_DRAW_TEXTURE_EXTENSION := true
 BOARD_NO_ALLOW_DEQUEUE_CURRENT_BUFFER := true
 COMMON_GLOBAL_CFLAGS += -DSURFACEFLINGER_FORCE_SCREEN_RELEASE
-#WITH_DEXPREOPT := true

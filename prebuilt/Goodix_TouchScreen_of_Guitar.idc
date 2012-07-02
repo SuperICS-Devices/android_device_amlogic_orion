@@ -11,18 +11,30 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+#
+# Input Device Configuration File for the Goodix TouchScreen of Guitar.
+#
 
-#Basic
+# Basic Parameters
 touch.deviceType = touchScreen
 touch.orientationAware = 1
-touch.sizeAware = 1
 
-#Keyboard
-keyboard.layout = qwerty
-keyboard.characterMap = qwerty
-keyboard.orientationAware = 1
-keyboard.builtIn = 1
+# Size
+touch.size.calibration = diameter
+touch.size.scale = 32
+touch.size.bias = 0
+touch.size.isSummed = 0
 
-#Cursor
-cursor.mode = pointer
-cursor.orientationAware = 1
+# Pressure
+# Driver reports signal strength as pressure.
+#
+# A normal index finger touch typically registers about 80 signal strength
+# units although we don't expect these values to be accurate.
+touch.pressure.calibration = amplitude
+touch.pressure.scale = 0.0005
+
+# Orientation
+touch.orientation.calibration = default
+
+# Distance
+touch.distance.calibration = default

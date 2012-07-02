@@ -14,14 +14,6 @@ $(call inherit-product, device/amlogic/orion/full_orion.mk)
 PRODUCT_PACKAGES += \
     ROMControl
 
-## Device identifier. This must come after all inclusions
-PRODUCT_NAME := osr_orion
-PRODUCT_BRAND := google
-PRODUCT_DEVICE := orion
-PRODUCT_MODEL := P4D Orion
-PRODUCT_MANUFACTURER := Amlogic
-PRODUCT_VERSION_MAINTENANCE := 0
-
 PRODUCT_CHARACTERISTICS := tablet
 
 #Set build fingerprint / ID / Product Name ect.
@@ -36,3 +28,12 @@ PRODUCT_PACKAGE_OVERLAYS += device/amlogic/orion/overlay
 -include vendor/osr/products/themes_common.mk
 
 PRODUCT_LOCALES := es_ES ca_ES fr_FR it_IT de_DE nl_NL pl_PL ja_JP zh_TW zh_CN ru_RU ko_KR en_US pt_PT en_GB ro_RO mdpi
+
+## Device identifier. This must come after all inclusions
+PRODUCT_NAME := osr_orion
+PRODUCT_BRAND := google
+PRODUCT_DEVICE := orion
+PRODUCT_MODEL := P4D Orion
+PRODUCT_MANUFACTURER := Amlogic
+PRODUCT_VERSION_MAINTENANCE := 0
+

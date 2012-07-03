@@ -36,6 +36,12 @@ PRODUCT_COPY_FILES += \
 	device/amlogic/orion/prebuilt/sensors/sensors.amlogic.so:system/lib/hw/sensors.amlogic.so \
 	device/amlogic/orion/prebuilt/sensors/memsicd:system/bin/memsicd
 
+# Wifi firmware
+PRODUCT_COPY_FILES += \
+        device/amlogic/orion/prebuilt/firmware/sdio-g-cdc-roml-reclaim-wme-apsta-idsup-idauth.bin:/system/etc/sdio-g-cdc-roml-reclaim-wme-apsta-idsup-idauth.bin \
+        device/amlogic/orion/prebuilt/firmware/sdio-g-cdc-full11n-reclaim-roml-wme-idsup.bin:/system/etc/sdio-g-cdc-full11n-reclaim-roml-wme-idsup.bin \
+        device/amlogic/orion/prebuilt/firmware/nvram.txt:/system/etc/nvram.txt \
+
 # Input device calibration files
 PRODUCT_COPY_FILES += \
 	device/amlogic/orion/prebuilt/Goodix_TouchScreen_of_Guitar.idc:system/usr/idc/Goodix_TouchScreen_of_Guitar.idc

@@ -7,7 +7,7 @@ TARGET_USES_OLD_LIBSENSORS_HAL := true
 #WIFI
 WIFI_DRIVER_MODULE_PATH := "/system/lib/modules/dhd.ko"
 WIFI_DRIVER_MODULE_NAME := "dhd"
-WIFI_DRIVER_MODULE_ARG  := "firmware_path=/etc/sdio-g-cdc-full11n-reclaim-roml-wme-idsup.bin nvram_path=/etc/nvram.txt"
+WIFI_DRIVER_MODULE_ARG  := "firmware_path=/system/etc/sdio-g-cdc-full11n-reclaim-roml-wme-idsup.bin nvram_path=/system/etc/nvram.txt"
 
 #BT
 BOARD_HAVE_BLUETOOTH := true

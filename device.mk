@@ -55,3 +55,17 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.sf.gsensorposition=2 \
 	sys.fb.bits=32 \
 	ro.setupwizard.mode=OPTIONAL
+
+# Bluetooth
+PRODUCT_PACKAGES += \
+        l2ping \
+        hcitool \
+        bttest
+
+PRODUCT_COPY_FILES += \
+        device/amlogic/orion/bluetooth/input.conf:/system/etc/bluetooth/input.conf \
+        device/amlogic/orion/bluetooth/main.conf:/system/etc/bluetooth/main.conf \
+        device/amlogic/orion/bluetooth/auto_pairing.conf:/system/etc/bluetooth/auto_pairing.conf \
+        device/amlogic/orion/bluetooth/network.conf:/system/etc/bluetooth/network.conf \
+        device/amlogic/orion/bluetooth/audio.conf:/system/etc/bluetooth/audio.conf \
+        device/amlogic/orion/bluetooth/blacklist.conf:/system/etc/bluetooth/blacklist.conf

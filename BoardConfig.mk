@@ -11,7 +11,6 @@ WIFI_DRIVER_MODULE_ARG  := "firmware_path=/system/etc/sdio-g-cdc-full11n-reclaim
 
 #BT
 BOARD_HAVE_BLUETOOTH := true
-BOARD_HAVE_BLUETOOTH_BCM := true
 
 #Prebuilt Kernel
 TARGET_PREBUILT_KERNEL := device/amlogic/orion/kernel

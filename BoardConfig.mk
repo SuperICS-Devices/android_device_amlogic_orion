@@ -12,6 +12,9 @@ WIFI_DRIVER_MODULE_ARG  := "firmware_path=/system/etc/sdio-g-cdc-full11n-reclaim
 #BT
 BOARD_HAVE_BLUETOOTH := true
 
+#Mobile DATA with 3G dongle
+BOARD_MOBILEDATA_INTERFACE_NAME = "ppp0"
+
 #Prebuilt Kernel
 TARGET_PREBUILT_KERNEL := device/amlogic/orion/kernel
 
